@@ -165,6 +165,7 @@ static void initCanPeripheral(void) {
 	__HAL_RCC_CAN1_CLK_ENABLE();
 
 	// init CAN
+	canHandle.Instance = CAN1;
 	canHandle.Init.TimeTriggeredMode = DISABLE;
 	canHandle.Init.AutoBusOff = DISABLE;
 	canHandle.Init.AutoWakeUp = DISABLE;
