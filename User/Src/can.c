@@ -225,12 +225,12 @@ void initCan(void) {
 	}
 
 	/*##-4- Activate CAN RX notification #######################################*/
-	HAL_NVIC_EnableIRQ(CAN1_RX0_IRQn);
-	if (HAL_CAN_ActivateNotification(&canHandle, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK)
-	{
-		/* Notification Error */
-		Error_Handler();
-	}
+//	HAL_NVIC_EnableIRQ(CAN1_RX0_IRQn);
+//	if (HAL_CAN_ActivateNotification(&canHandle, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK)
+//	{
+//		/* Notification Error */
+//		Error_Handler();
+//	}
 
 }
 
