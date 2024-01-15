@@ -28,7 +28,7 @@ CAN_HandleTypeDef     canHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 static void initGpio(void);
-void initCan(void);
+static void initCanPeripheral(void);
 
 
 /**
@@ -36,7 +36,7 @@ void initCan(void);
  */
 void canInitHardware(void) {
 	initGpio();
-	initCan();
+	initCanPeripheral();
 }
 
 /**
@@ -157,7 +157,7 @@ static void initGpio(void)
  * No Filters are applied.
  * IRQs are enabled
  */
-void initCan(void) {
+static void initCanPeripheral(void) {
 
 	CAN_FilterTypeDef canFilter;
 
